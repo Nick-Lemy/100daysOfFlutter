@@ -1,4 +1,4 @@
 # I Am Rich
 Old app that existed for rich people to showcase their wealth. It used to be sold on the App store at $999,999
 ## Screenshot
-![i_am_rich.png](i_am_rich.png =100x20)
+<img src='i_am_rich.png' width='500' alt="I Am Rich img">
