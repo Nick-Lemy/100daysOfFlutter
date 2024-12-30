@@ -2,4 +2,4 @@
 
 Dicee App
 
-## Getting Started
+## 
