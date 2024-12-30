@@ -15,18 +15,39 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: HomePage());
+        home: BallPage());
   }
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class BallPage extends StatelessWidget {
+  const BallPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.blueAccent,
+            title: Text(
+              'Magic Ball',
+            ),
+            centerTitle: true,
+            titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
+          ),
+          body: Center(child: Ball())),
+    );
+    ;
+  }
 }
 
-class _HomePageState extends State<HomePage> {
+class Ball extends StatefulWidget {
+  const Ball({super.key});
+
+  @override
+  State<Ball> createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
   int _number = 1;
   void _randomizeNumber() {
     setState(() {
@@ -36,22 +57,11 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
-          title: Text(
-            'Magic Ball',
-          ),
-          centerTitle: true,
-          titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-        body: Center(
-          child: TextButton(
-            onPressed: _randomizeNumber,
-            child: Image.asset('images/ball$_number.png'),
-          ),
-        ),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: GestureDetector(
+        onTap: _randomizeNumber,
+        child: Image.asset('images/ball$_number.png'),
       ),
     );
   }
