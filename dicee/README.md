@@ -3,4 +3,3 @@
 Dicee App
 
 ## Getting Started
-
