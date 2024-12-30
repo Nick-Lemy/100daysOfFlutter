@@ -1,11 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-List<int> dices = [1, 2, 3, 4, 5, 6];
-List<int> dices2 = [1, 2, 3, 4, 5, 6];
+int dice1 = 1;
+int dice2 = 2;
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -47,7 +49,7 @@ class _MyAppState extends State<MyApp> {
                             });
                           },
                           child: Image.asset(
-                            'images/dice${dices[0]}.png',
+                            'images/dice$dice1.png',
                             color: Colors.red,
                           )),
                     ),
@@ -62,7 +64,7 @@ class _MyAppState extends State<MyApp> {
                             });
                           },
                           child: Image.asset(
-                            'images/dice${dices2[0]}.png',
+                            'images/dice$dice2.png',
                             color: Colors.red,
                           )),
                     ),
@@ -78,6 +80,6 @@ class _MyAppState extends State<MyApp> {
 }
 
 void modifyNumber() {
-  dices2.shuffle();
-  dices.shuffle();
+  dice2 = Random().nextInt(6) + 1;
+  dice1 = Random().nextInt(6) + 1;
 }
