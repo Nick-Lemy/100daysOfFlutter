@@ -26,8 +26,9 @@ class BallPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.blue,
           appBar: AppBar(
-            backgroundColor: Colors.blueAccent,
+            backgroundColor: Colors.blue[900],
             title: Text(
               'Magic Ball',
             ),
