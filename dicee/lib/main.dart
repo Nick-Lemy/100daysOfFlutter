@@ -37,28 +37,36 @@ class _MyAppState extends State<MyApp> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          modifyNumber();
-                        });
-                      },
-                      child: Image.asset(
-                        'images/dice${dices[0]}.png',
-                        height: 150,
-                        color: Colors.red,
-                      )),
-                  GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          modifyNumber();
-                        });
-                      },
-                      child: Image.asset(
-                        'images/dice${dices2[0]}.png',
-                        height: 150,
-                        color: Colors.red,
-                      )),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              modifyNumber();
+                            });
+                          },
+                          child: Image.asset(
+                            'images/dice${dices[0]}.png',
+                            color: Colors.red,
+                          )),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              modifyNumber();
+                            });
+                          },
+                          child: Image.asset(
+                            'images/dice${dices2[0]}.png',
+                            color: Colors.red,
+                          )),
+                    ),
+                  ),
                 ],
               ),
             ],
