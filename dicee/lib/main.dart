@@ -61,12 +61,6 @@ class _MyAppState extends State<MyApp> {
                       )),
                 ],
               ),
-              Text(
-                'Tu as tiré ${dices[0] + dices2[0]}',
-                style: TextStyle(
-                  fontSize: 20
-                ),
-              )
             ],
           ),
         ),
