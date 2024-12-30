@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Magic ball',
         home: BallPage());
   }
 }
@@ -30,7 +30,7 @@ class BallPage extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.blue[900],
             title: Text(
-              'Magic Ball',
+              'Ask Me Anything',
             ),
             centerTitle: true,
             titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
