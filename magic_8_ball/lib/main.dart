@@ -59,7 +59,7 @@ class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(16.0),
       child: GestureDetector(
         onTap: _randomizeNumber,
         child: Image.asset('images/ball$_number.png'),
