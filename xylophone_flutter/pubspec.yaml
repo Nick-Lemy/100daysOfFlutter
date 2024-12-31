@@ -34,10 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-<<<<<<< HEAD
   just_audio: ^0.9.42
-=======
->>>>>>> origin/main
 
 dev_dependencies:
   flutter_test:
@@ -62,13 +59,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-<<<<<<< HEAD
   assets:
-     - assets/
-=======
-  # assets:
-  #   - images/a_dot_burr.jpeg
->>>>>>> origin/main
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
