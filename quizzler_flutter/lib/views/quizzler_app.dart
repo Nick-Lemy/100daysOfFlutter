@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:quizzler_flutter/components//elements.dart';
 
 class QuizzlerApp extends StatefulWidget {
@@ -39,7 +42,7 @@ class _QuizzlerAppState extends State<QuizzlerApp> {
                 content: Text('${score.toString()} out of ${icons.length}'),
                 actions: <Widget>[
                   TextButton(
-                    onPressed: () => Navigator.pop(context, 'Cancel'),
+                    onPressed: SystemNavigator.pop,
                     child: const Text('Exit'),
                   ),
                   TextButton(
