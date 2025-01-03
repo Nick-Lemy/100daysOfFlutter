@@ -7,8 +7,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:quizzler_flutter/main.dart';
 import 'package:quizzler_flutter/views/quizzler_app.dart';
 
 void main() {
