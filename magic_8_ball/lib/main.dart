@@ -26,7 +26,7 @@ class BallPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue,
           appBar: AppBar(
             backgroundColor: Colors.blue[900],
             title: Text(
@@ -37,7 +37,6 @@ class BallPage extends StatelessWidget {
           ),
           body: Center(child: Ball())),
     );
-    ;
   }
 }
 

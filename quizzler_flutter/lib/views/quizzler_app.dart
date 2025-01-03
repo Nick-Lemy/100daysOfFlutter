@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quizzler_flutter/components//elements.dart';
@@ -12,7 +10,6 @@ class QuizzlerApp extends StatefulWidget {
 }
 
 class _QuizzlerAppState extends State<QuizzlerApp> {
-
   Padding buildButton(
       {required Color color, required String title, required bool checker}) {
     return Padding(
@@ -22,7 +19,7 @@ class _QuizzlerAppState extends State<QuizzlerApp> {
             backgroundColor: color,
             minimumSize: Size(double.infinity, 60),
             shape: LinearBorder()),
-        onPressed:  () {
+        onPressed: () {
           if (index < questions.length - 1) {
             setState(() {
               if (questions[index].answer == checker) {
@@ -46,11 +43,11 @@ class _QuizzlerAppState extends State<QuizzlerApp> {
                     child: const Text('Exit'),
                   ),
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       setState(() {
                         score = 0;
                         index = 0;
-                        icons =[];
+                        icons = [];
                       });
                       Navigator.pop(context, 'OK');
                     },
