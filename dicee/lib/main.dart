@@ -1,13 +1,15 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
 }
 
+
 int dice1 = 1;
-int dice2 = 2;
+int dice2 = 1;
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
