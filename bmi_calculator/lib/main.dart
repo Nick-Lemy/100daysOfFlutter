@@ -6,8 +6,7 @@ void main() {
 
 final Color bg = Color.fromRGBO(28, 29, 47, 1);
 final Color co = Color.fromRGBO(47, 43, 60, 1);
-final TextStyle bigNum =
-    TextStyle(color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold);
+final TextStyle bigNum = TextStyle(color: Colors.white, fontSize: 45, fontWeight: FontWeight.bold);
 final TextStyle smallNum = TextStyle(color: Colors.white, fontSize: 16);
 
 class MyApp extends StatelessWidget {
@@ -74,7 +73,6 @@ class _HomePageState extends State<HomePage> {
                     Slider(
                       value: 0.2,
                       onChanged: (a) {
-                        print('object');
                       },
                     )
                   ],
@@ -98,10 +96,7 @@ class _HomePageState extends State<HomePage> {
         child: Text(
           'CALCULATE',
           style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 20
-          ),
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
         ),
       ),
     );
@@ -136,10 +131,7 @@ Expanded genderWidget({required IconData icon, required String title}) {
   );
 }
 
-Expanded bottomWidgets({
-  required String title,
-  required int number,
-}) {
+Expanded bottomWidgets({required String title, required int number}) {
   return Expanded(
     child: Padding(
       padding: const EdgeInsets.all(8.0),
